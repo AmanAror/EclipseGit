@@ -1237,6 +1237,6 @@ public ResponseTime selectESGPicker(String value) throws InterruptedException {
 	    JavascriptExecutor executor = (JavascriptExecutor) elementHelper.driver();
 	    String script = "return arguments[0].getAttributeNames();";
 	    Object attributes = executor.executeScript(script, element);
-	    return ((ArrayList) attributes).contains(attrNam43);
+	    return ((ArrayList) attributes).contains(attrName);
 	}
 }
